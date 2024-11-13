@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Citizen DAO",
     description: "Internet native, self-sovereign",
-    images: "/logo.svg",
+    images: "/logo.png",
   },
 };
 
