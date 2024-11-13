@@ -1,7 +1,6 @@
 import {
   ChevronRight,
   CheckCircle,
-  Shield,
   Briefcase,
   Rocket,
   Vote,
