@@ -37,7 +37,8 @@ export default function LandingPage() {
           </h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Run your own digital organization instantly. Attach it to your
-            existing entity or start a new one.
+            existing entity or start a new one. No fiscal hosts, no
+            intermediaries.
           </p>
           <Link
             href={process.env.DISCORD_INVITE_LINK ?? "#"}
