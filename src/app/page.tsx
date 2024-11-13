@@ -1,9 +1,11 @@
 import {
   ChevronRight,
   CheckCircle,
-  Users,
   Shield,
   Briefcase,
+  Rocket,
+  Vote,
+  FileDigit,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -52,26 +54,32 @@ export default function LandingPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Why Citizen DAO?
+            How does it work?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
               {
-                icon: <Users className="h-12 w-12 text-[#6370ff]" />,
+                icon: <Rocket className="h-12 w-12 text-[#6370ff]" />,
                 title: "Start Simple",
                 description: "Bring people together, start doing, no friction.",
               },
               {
-                icon: <Shield className="h-12 w-12 text-[#6370ff]" />,
-                title: "Transparent Decision Making",
+                icon: <Vote className="h-12 w-12 text-[#6370ff]" />,
+                title: "1 vote = 1 signature",
                 description:
-                  "Enable direct and transparent voting by members of your entity.",
+                  "Enable direct and transparent operations of your entity.",
+              },
+              {
+                icon: <FileDigit className="h-12 w-12 text-[#6370ff]" />,
+                title: "1 proposal = 1 transaction",
+                description:
+                  "Combine decisions and actions. Discuss, vote, execute.",
               },
               {
                 icon: <Briefcase className="h-12 w-12 text-[#6370ff]" />,
                 title: "Attach an off-chain entity",
                 description:
-                  "Apply for grants directly, KYC, open a traditional bank account, obtain a credit card, sign agreements, etc...",
+                  "Apply for grants directly, KYC, obtain a credit card, open a traditional bank account, sign agreements, etc...",
               },
             ].map((feature, index) => (
               <div key={index} className="text-center">
