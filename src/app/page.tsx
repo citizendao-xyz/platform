@@ -5,7 +5,6 @@ import {
   Shield,
   Briefcase,
 } from "lucide-react";
-import ContactForm from "./ContactForm";
 import Image from "next/image";
 import Link from "next/link";
 
