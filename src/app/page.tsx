@@ -24,7 +24,9 @@ export default function LandingPage() {
           />
           <div className="flex flex-col">
             <h1 className="text-4xl font-semibold">Citizen DAO</h1>
-            <p className="text-2xl">Internet native, self-sovereign</p>
+            <p className="text-2xl">
+              Internet native, self-sovereign digital organizations
+            </p>
           </div>
         </div>
       </header>

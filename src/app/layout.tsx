@@ -16,13 +16,13 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Citizen DAO",
-  description: "Internet native, self-sovereign",
+  description: "Internet native, self-sovereign digital organizations",
   icons: {
     icon: "/logo.svg",
   },
   openGraph: {
     title: "Citizen DAO",
-    description: "Internet native, self-sovereign",
+    description: "Internet native, self-sovereign digital organizations",
     images: "/logo.png",
   },
 };
