@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import {
   ChevronRight,
   CheckCircle,
@@ -5,6 +6,7 @@ import {
   Rocket,
   Vote,
   FileDigit,
+  BookOpen,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -33,7 +35,7 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="py-10 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="flex flex-col items-center max-w-2xl mx-auto text-center gap-4">
           <h1 className="text-4xl font-bold mb-6 text-[#6370ff]">
             Manage funds and take decisions together
           </h1>
@@ -44,10 +46,17 @@ export default function LandingPage() {
           </p>
           <Link
             href={process.env.DISCORD_INVITE_LINK ?? "#"}
-            className="inline-flex items-center px-6 py-3 border border-transparent text-xl font-bold rounded-md text-white bg-[#6370ff] hover:bg-[#4f5cff] transition duration-150 ease-in-out"
+            className="inline-flex items-center mb-4 px-6 py-3 border border-transparent text-xl font-bold rounded-md text-white bg-[#6370ff] hover:bg-[#4f5cff] transition duration-150 ease-in-out"
           >
             Start a new organization
             <ChevronRight className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
+          </Link>
+          <Link
+            href="/pitch.pdf"
+            target="_blank"
+            className="text-2xl inline-flex items-center px-6 py-3 text-xl font-bold text-[#6370ff] hover:text-[#4f5cff] hover:underline transition duration-150 ease-in-out"
+          >
+            Read the pitch <BookOpen className="ml-2 -mr-1 h-5 w-5" />
           </Link>
         </div>
       </section>
