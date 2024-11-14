@@ -118,7 +118,7 @@ export default function LandingPage() {
                   width={20}
                   className="mr-4 rounded-md"
                 />
-                <h3 className="text-2xl font-semibold">Main Multi-Sig</h3>
+                <h3 className="text-2xl font-semibold">Members Multi-Sig</h3>
               </div>
               <ul className="space-y-2 inline-block text-left">
                 <li className="flex items-start">
